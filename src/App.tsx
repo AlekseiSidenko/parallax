@@ -5,8 +5,8 @@ import './App.css'
 function App(){
 
   useEffect(() => {
-    window.addEventListener('scroll', e => {
-      document.documentElement.style.setProperty('--scrollTop', `${window.scrollY}px`) // Update method
+    window.addEventListener('scroll', () => {
+      document.documentElement.style.setProperty('--scrollTop', `${window.scrollY}px`)
     })
   }, [])
 
